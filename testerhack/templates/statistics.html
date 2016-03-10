@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<html>
+<head><link rel="stylesheet" type="text/css" href="{% static './css/bootstrap.min.css' %}">
+    <title>Statistics</title>
+</head>
+
+<body>
+
+<div class="container">
+             
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Variant</th>
+        <th>User Count</th>
+        <th>Buy Clicks</th>
+        <th>Conversion Ratio</th>
+        <th>Conversion Rates</th>
+      </tr>
+    </thead>
+    <tbody>
+      	<td>Variant A (Old)</td><td>{{ stat1_visit }}</td><td>{{ stat1_buy }}</td><td>{{ purchase_ratio1 }}</td><td>{{ conversion_rate1 }}%</td>
+      </tr>
+      <tr class="success">
+            <td>Variant B (New)</td><td>{{ stat2_visit }}</td><td>{{ stat2_buy }}</td><td>{{ purchase_ratio2 }}</td><td>{{ conversion_rate2 }}%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
