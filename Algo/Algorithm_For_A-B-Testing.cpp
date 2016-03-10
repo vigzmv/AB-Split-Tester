@@ -23,7 +23,6 @@ int populator(int usrCount,float splt)
 	}
 	pos=pos+usrCount;
 }
-
 float choicefinder()
 {
 	float like1=0,like2=0;
